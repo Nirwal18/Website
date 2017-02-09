@@ -1,0 +1,68 @@
+<html ng-app="WebX">
+
+  <head>
+    <title>Angular 2 QuickStart</title>
+
+    <!-- 1. Load libraries -->
+   <link rel="stylesheet" type="text/css" href="src/css/style.css">
+   <script src="js/jquery-2.1.4.min.js"></script>
+
+
+    <!-- 2. Configure SystemJS -->
+    
+
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+    <header>
+    <!-- Main menu Start -->
+      <ul id="man-nav">
+        <li><a href="#/">home</a>
+            <!--Sub Menu Start -->
+          <ul class="sub-nav">
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Linux</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#catagory">Catagory</a>
+          <ul class="sub-nav">
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Linux</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="#">Downloads</a>
+          <ul class="sub-nav">
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Linux</a></li>
+          </ul>
+        </li>
+        <li><a href="#contactus">Contact us!</a></li>
+        <li><a href="#about">About us!</a></li>
+      </ul>
+      <button ng-click="setRoute('/about')">about</button>
+    </header>
+
+
+
+             <!-- Angular body-->
+      <div id="container">   
+     <div ng-view>
+    
+          <!--Angular Dynamic Contante Will Apear here-->   
+     </div>
+      </div>
+        <script src="src/js/lib/angular.min.js"></script>
+        <script src="src/js/lib/angular-route.min.js"></script>
+        <script src="src/js/route.js"></script>
+    </body>
+
+</html>

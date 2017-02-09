@@ -1,0 +1,74 @@
+@charset "utf-8";
+body{
+	width: 100%;
+	min-height: 100%;
+	padding: 25px;
+	margin: 0;
+}
+/* main Menu Posision It shouldn't change*/
+#man-nav li{
+position: relative;}
+
+/* Star make all tags ,class,id to default*/ 
+*{
+	padding: 0 0 0 0;
+	margin: 0;
+	list-style: none;
+	font-family: arial;
+}
+/* for making main menu in an line */
+ul#man-nav > li,ul#man-nav > li a{display: inline-block;}
+/* only main menu 'li' k child 'a' ki property ko set karne k lia*/
+ul#man-nav > li > a{
+	padding: 15px 60px;
+	border: 2px solid #E75B04;
+	background-color: #ff6600;
+	color: #fff;
+	margin: 0px;
+	text-decoration: none;
+	border-radius: 10px 10px 0 0;
+}
+
+/* li par hover karne par 'a' per effect */
+ul#man-nav >li:hover>a{
+	background-color:#E75B04; 
+}
+
+/* Making sub menu positon Absolute*/
+.sub-nav{
+	position:absolute;
+}
+ /*Sun menu styling*/
+.sub-nav{
+	width: 100%;
+	background: #dadada;
+	box-sizing:border-box;
+	overflow: hidden;
+	/* for hiding sub menu*/
+	display:none;
+}
+
+/*Sun menu styling and decoration*/
+.sub-nav a{
+	text-decoration: none;
+	display: block;
+	padding: 10px 15px;
+	border-bottom: 1px solid #ccc;
+	width:100%;
+	position: relative;
+}
+.sub-nav a:hover{
+	background: #E75B04;
+	color: #fff;
+}
+/* for Displaying sub menu by hover on main ke li par*/
+
+#man-nav>li:hover ul{
+	display:block;
+}
+
+header{
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid black;
+}

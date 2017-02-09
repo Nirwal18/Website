@@ -1,0 +1,29 @@
+.tb_img{
+	padding-top: 20px;
+
+}
+
+.tab-btn{
+background-color: white;
+/*border: solid black;*/
+height: auto !important;
+/*margin-top: 10px;
+padding-top: 10px;*/
+object-position: top;
+
+  
+}
+
+.row{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+
+}
+
+
+iframe{
+	min-height: 390px;
+	height: 100%;
+	width: 100%;
+}
+
